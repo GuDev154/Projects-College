@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Planejamento de Viagem</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+        <!-- Menu de Navegação -->
+        <nav class="top-nav">
+            <a class="active" href="index.html">INÍCIO</a>
+            <a href="promo.html">PACOTES</a>
+            <a onclick="toggleModal()">CONTATO</a>
+            <a href="about.html">SOBRE</a>
+        </nav>
+        
+        <!-- Titulo e Nome  -->
+        <div class="top-displayer">
+            <div class="logo"></div>
+        </div>
+
+        <div class="center-content">
+            <p>
+                <b>
+                    Descubra o Mundo com Traveling Agency
+                </b>
+            </p>
+            <p>
+                A Traveling Agency é uma agência de viagens especializada em viagens internacionais. Nosso objetivo é oferecer experiências únicas e memoráveis para 
+                nossos clientes, que vão além dos cartões-postais.
+            </p>
+            <p>
+                Destinos exclusivos e experiências únicas. Roteiros personalizados adaptados aos interesses dos clientes
+                Atendimento personalizado e atenção aos detalhes. Garantia de uma viagem inesquecível
+
+            <b> A agência oferece uma ampla gama de destinos, incluindo:
+            </b>
+            
+            <p> África: safáris na África do Sul, caminhadas no Kilimanjaro, mergulho nas Maldiva
+                Ásia: templos budistas na Tailândia, praias paradisíacas em Bali, ruínas de Angkor Wat no Camboja
+                América do Sul: Machu Picchu no Peru, trekking na Cordilheira dos Andes, praias de sonho na Ilha de Páscoa
+                América do Norte: parques nacionais nos Estados Unidos, cidades vibrantes como Nova York e Toronto, praias de areia branca no Caribe
+                Europa: castelos medievais na França, museus de arte em Londres, praias da Riviera Italiana
+            <p>Além dos destinos, a Traveling Agency também oferece uma variedade de experiências únicas, como:
+                Tour guiado por um local especializado em uma cidade estrangeira; Aula de culinária local
+                Jantar em um restaurante premiado; Passeio de balão de ar quente sobre um destino espetacular
+                Visita a um evento cultural ou esportivo exclusivo
+             </p>
+               <b> A Traveling Agency é a sua porta de entrada para o mundo. Embarque conosco em uma jornada única e inesquecível.
+               </b>
+        </div>
+        <div class="contact-modal">
+            <div><b>Contato</b> <div class="modal-clse-btn" onclick="toggleModal()">X</div></div>
+            <form method="get" action="form-action.html" class="form">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome" class="input" required>
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Email" class="input" required>
+                <label for="Celular">Celular</label>
+                <input type="Phone" name="celular" id="celular" required placeholder="Celular" pattern="\(\d{2}\)\s\d{4,5}-\d{4}$" onkeydown="return mascaraTelefone(event)" class="input">
+                <label for="Nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" class="input">
+                <div>
+                    <input type="checkbox" name="termos" id="termos" class="" required />
+                    <label for="termos" class="">
+                        Eu concordo com os <a href="#" class="term-service">termos de serviço</a>
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" class="btn" value="Enviar"> 
+                    <input type="reset"  class="btn" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script/form.js"></script>
+</body>
+</html>

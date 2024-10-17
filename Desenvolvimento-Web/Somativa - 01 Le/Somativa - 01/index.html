@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Planejamento de Viagem</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+
+        <!-- Menu de Navegação -->
+        <nav class="top-nav">
+            <a class="active" href="index.html">INÍCIO</a>
+            <a href="promo.html">PACOTES</a>
+            <a onclick="toggleModal()">CONTATO</a>
+            <a href="about.html">SOBRE</a>
+        </nav>
+        
+        <!-- Titulo e Nome  -->
+        <div class="top-displayer">
+            <div class="logo"></div>
+        </div>
+
+        <div class="center-content">
+            <p>
+                <b>
+                    Descubra o Mundo com Traveling Agency - Suas Viagens Internacionais Inesquecíveis
+                </b>
+            </p>
+
+            <p>
+                Bem-vindo à Traveling Agency, sua porta de entrada para experiências internacionais extraordinárias. Embarque conosco em uma jornada única ao redor do globo, onde cada destino é uma promessa de descoberta, aventura e memórias que durarão a vida toda.
+            </p>
+
+            <p>
+                <b>
+                    Destinos Exclusivos:
+                </b>
+                Explore destinos que vão além dos cartões-postais, descubra tesouros escondidos e viva a autenticidade de cada cultura. De metrópoles cosmopolitas a paraísos naturais intocados, nossa seleção de destinos internacionais é cuidadosamente elaborada para oferecer uma variedade de experiências enriquecedoras.
+            </p>
+
+            <p>
+                <b>
+                    Roteiros Personalizados:
+                </b>
+                Na Traveling Agency, entendemos que cada viajante é único. Nossos especialistas em viagens estão prontos para criar roteiros personalizados, adaptados aos seus interesses, desejos e orçamento. Seja uma escapada romântica, uma aventura em família ou uma jornada solo, nós cuidamos de todos os detalhes para que você aproveite ao máximo cada momento.
+            </p>
+
+            <p>
+                <b>
+                    Experiências Únicas:
+                </b>
+                Enriqueça sua viagem com experiências únicas e atividades exclusivas. Desde tours guiados por locais especializados até jantares em lugares icônicos, garantimos que cada momento seja enriquecedor e autêntico.
+            </p>
+        </div>
+        <!-- Formulario -->
+        <div class="contact-modal">
+            <div><b>Contato</b> <div class="modal-clse-btn" onclick="toggleModal()">X</div></div>
+            <form method="get" action="form-action.html" class="form">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome" class="input" required>
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Email" class="input" required>
+                <label for="Celular">Celular</label>
+                <input type="Phone" name="celular" id="celular" required placeholder="Celular" pattern="\(\d{2}\)\s\d{4,5}-\d{4}$" onkeydown="return mascaraTelefone(event)" class="input">
+                <label for="Nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" class="input">
+                <div>
+                    <input type="checkbox" name="termos" id="termos" class="" required />
+                    <label for="termos" class="">
+                        Eu concordo com os <a href="#" class="term-service">termos de serviço</a>
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" class="btn" value="Enviar"> 
+                    <input type="reset"  class="btn" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script/form.js"></script>
+</body>
+</html>

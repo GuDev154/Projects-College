@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Planejamento de Viagem</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+        <!-- Menu de Navegação -->
+        <nav class="top-nav">
+            <a class="active" href="index.html">INÍCIO</a>
+            <a href="promo.html">PACOTES</a>
+            <a onclick="toggleModal()">CONTATO</a>
+            <a href="about.html">SOBRE</a>
+        </nav>
+        
+        <!-- Titulo-->
+        <div class="top-displayer">
+            <div class="logo"></div>
+        </div>
+
+        <div class="promo-container">
+            <div class="w-100">
+                <div class="section">
+                    <p>
+                        Viva a magia com o pacote Disney da Traveling Agency, incluindo passagens, hospedagem nos resorts da Disney, ingressos para os parques e traslados. Personalize seu roteiro com encontros mágicos, desfiles e atividades aquáticas. Deixe-nos criar a viagem dos seus sonhos para a Disney.
+                    </p>
+                    <p>
+                        Com a Traveling Agency, você pode criar a viagem dos seus sonhos para a Disney. Entre em contato conosco hoje mesmo para obter mais informações.
+                    </p>
+                </div>
+                <div class="section">
+                    <img src="img/disney.jpg" class="img" alt="">
+                </div>
+            </div>
+            <div class="w-100">
+                <div class="section">
+                    <img src="img/vegas.jpg" class="img" alt="">
+                </div>
+                <div class="section">
+                    Explore a extravagância de Las Vegas com o pacote da Traveling Agency, que inclui passagens, hospedagem luxuosa na Strip, ingressos para shows e créditos para cassinos. Personalize sua experiência com atividades emocionantes, desde espetáculos renomados até jantares românticos. Deixe-nos cuidar dos detalhes para que você aproveite ao máximo essa cidade que nunca dorme.
+                </div>
+            </div>
+        </div>
+        <div class="contact-modal">
+            <div><b>Contato</b> <div class="modal-clse-btn" onclick="toggleModal()">X</div></div>
+            <form method="get" action="form-action.html" class="form">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome" class="input" required>
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Email" class="input" required>
+                <label for="Celular">Celular</label>
+                <input type="Phone" name="celular" id="celular" required placeholder="Celular" pattern="\(\d{2}\)\s\d{4,5}-\d{4}$" onkeydown="return mascaraTelefone(event)" class="input">
+                <label for="Nascimento">Nascimento</label>
+                <input type="date" name="nascimento" id="nascimento" class="input">
+                <div>
+                    <input type="checkbox" name="termos" id="termos" class="" required />
+                    <label for="termos" class="">
+                        Eu concordo com os <a href="#" class="term-service">termos de serviço</a>
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" class="btn" value="Enviar"> 
+                    <input type="reset"  class="btn" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script/form.js"></script>
+</body>
+</html>
